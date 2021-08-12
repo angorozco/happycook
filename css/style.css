@@ -425,6 +425,7 @@ footer .owner {
     color: #FFF;
     padding: .6rem;
     cursor: pointer;
+    font-family: 'Otomanopee One', sans-serif;
 }
 
 .login__choice div form .btn__google {
