@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF4F8;
+}
+
+
+/*------INDEX------*/
+
+nav div {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Otomanopee One', sans-serif;
+    color: #FBCD37;
+}
+
+.nav__logo {
+    width: 80px;
+}
+
+.nav__button {
+    border: none;
+    background-color: #FBCD37;
+    border-radius: .8rem;
+    height: 30px;
+    color: #FFFF;
+    padding: .5rem;
+}
+
+header {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header div img {
+    display: block;
+    width: 344px;
+    height: 304px;
+    object-fit: cover;
+    margin: auto;
+}
+
+header h1 {
+    font-family: 'Otomanopee One', sans-serif;
+    color: #FBCD37;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    font-size: calc(2em + 3vw);
+}
+
+header p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #857E7E;
+    text-align: center;
+    font-size: calc(1em + 2vw);
+    position: relative;
+    bottom: 5rem;
+}
+
+.header__button {
+    margin: auto;
+    position: relative;
+    bottom: 3rem;
+    padding: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    border: none;
+    background-color: #FBCD37;
+    text-decoration: none;
+    font-family: 'Otomanopee One', sans-serif;
+    color: #FFFF;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        padding: 0 3rem;
+        justify-content: space-between;
+    }
+    nav ul li {
+        padding-right: 3rem;
+    }
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+    .nav__button {
+        width: 100px;
+        border: none;
+        background-color: #FBCD37;
+        border-radius: .8rem;
+    }
+    .nav__button a {
+        color: #FFFF;
+    }
+    header div img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.section__cards {
+    padding: 4rem 0;
+}
+
+.section__cards .card {
+    background-color: #FFFF;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: .6rem;
+}
+
+.card img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section__cards .card h2 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.section__cards .card p {
+    color: #857E7E;
+    height: 92px;
+    overflow-y: auto;
+    padding: 1rem;
+    font-size: calc(.8em + .3vw);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section__cards .card p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.section__cards .card p::-webkit-scrollbar-thumb {
+    background-color: #FBCD37;
+}
+
+@media screen and (min-width: 768px) {
+    .section__cards {
+        display: flex;
+    }
+    .section__cards .card {
+        width: 25%;
+        height: 500px;
+    }
+    .card img {
+        height: 70%
+    }
+    .card {
+        transition: ease all 0.5s;
+    }
+    .card:hover {
+        transform: scale(1.02);
+    }
+}
+
+.div__info {
+    background-color: white;
+}
+
+.div__info .info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.div__info .info:nth-child(1) {
+    padding-top: 3rem;
+}
+
+.div__info .info img {
+    height: 100px;
+}
+
+.div__info .info div h2 {
+    color: #FBCD37;
+    font-size: calc(1em + .8vw);
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.div__info .info div p {
+    color: #857E7E;
+    font-size: calc(.8em + .8vw);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .section__info {
+        margin-top: 5rem;
+    }
+    .div__info {
+        width: 70%;
+        margin: auto;
+    }
+    .div__info .info {
+        display: flex;
+        justify-content: center;
+    }
+    .div__info .info img {
+        height: 150px;
+    }
+    .div__info .info div {
+        width: 50%;
+        padding: 1rem;
+    }
+    .div__info .info div p {
+        margin-top: 1rem;
+    }
+    .div__info .info:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+}
+
+.section__ver {
+    text-align: center;
+    padding: 5rem;
+}
+
+.section__ver div img {
+    height: 100px;
+}
+
+.section__ver div p {
+    color: #857E7E;
+    margin: 2rem;
+    font-size: calc(.8em + .8vw);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section__ver div a {
+    background-color: #FBCD37;
+    color: #FFFF;
+    border-radius: .5rem;
+    padding: .6rem;
+    text-decoration: none;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .section__ver div img {
+        height: 150px;
+    }
+}
+
+footer {
+    background-color: #000033;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer .footer__pages {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer__pages a {
+    text-decoration: none;
+    color: #FBCD37;
+}
+
+footer .footer__contact a {
+    color: #FBCD37;
+    text-decoration: none;
+}
+
+.footer__contact {
+    color: #FBCD37;
+    list-style: none;
+}
+
+.footer__contact li {
+    display: flex;
+}
+
+.footer__contact li i {
+    padding: .3rem;
+}
+
+footer .owner {
+    color: #FBCD37;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    footer div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/*-----NOSOTROS-----*/
+
+.header__us h1 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    font-size: calc(1em + 1.5vw);
+}
+
+.elevatorPitch {
+    padding: 0 2rem;
+}
+
+.elevatorPitch p {
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #857E7E;
+    font-size: calc(.8rem + .8vw);
+}
+
+.elevatorPitch p span {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.us__center {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/*-----CONTACTO-----*/
+
+.header__contact h1 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    font-size: calc(1em + 1.5vw);
+}
+
+.contact__form iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/*-----LOGIN-----*/
+
+.login__choice {
+    margin: 2rem 0;
+}
+
+.login__choice h1,
+h2 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    padding: 1rem 3rem 3rem 3rem;
+    text-align: center;
+    font-size: calc(1em + 1.5vw);
+}
+
+.login__choice div {
+    width: 90%;
+    margin: auto;
+}
+
+.login__choice div {
+    background-color: #FFF;
+    border-radius: .8rem;
+}
+
+.login__choice div form input {
+    display: block;
+    margin-bottom: 1rem;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    border: dotted #857E7E;
+    border-radius: .8rem;
+    height: 35px;
+}
+
+.login__choice div form button {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: .8rem;
+    background-color: #FBCD37;
+    color: #FFF;
+    padding: .6rem;
+    cursor: pointer;
+}
+
+.login__choice div form .btn__google {
+    background-color: #FFFF;
+    color: #FBCD37;
+    border: #FBCD37 1px solid;
+}
+
+@media screen and (min-width: 768px) {
+    .login__choice {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0;
+    }
+    .login__choice div {
+        width: 25%;
+        margin: 2rem;
+    }
+}
+
+
+/*-----RECETAS-----*/
+
+.header__recetas h1 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    font-size: calc(1em + 1.5vw);
+}
+
+.section__recetas {
+    margin-bottom: 3rem;
+}
+
+.section__recetas .receta {
+    background-color: #FFFF;
+    width: 70%;
+    height: 350px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.receta img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section__recetas .receta h2 {
+    color: #FBCD37;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1.3rem;
+    padding: 0;
+    margin-bottom: .2rem;
+}
+
+.section__recetas .receta p {
+    color: #857E7E;
+    padding: .3rem;
+    font-size: calc(.8em + .3vw);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section__recetas .receta a {
+    text-decoration: none;
+    border: none;
+    border-radius: .8rem;
+    background-color: #FBCD37;
+    color: #FFF;
+    padding: .6rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.section__recetas .receta .info__receta {
+    margin-bottom: 1.5rem;
+}
+
+.section__recetas .receta .info__receta select {
+    outline: none;
+    border: none;
+    color: #857E7E;
+    font-size: calc(.8em + .3vw);
+}
+
+@media screen and (min-width: 768px) {
+    .section__recetas {
+        display: flex;
+    }
+    .section__recetas .receta {
+        width: 25%;
+        height: 500px;
+    }
+    .receta img {
+        height: 70%
+    }
+    .receta {
+        transition: ease all 0.5s;
+    }
+    .receta:hover {
+        transform: scale(1.02);
+    }
+    .section__recetas .receta .info__receta {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+}
